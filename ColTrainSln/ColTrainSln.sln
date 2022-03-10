@@ -9,15 +9,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{65AA0FD0-1C64-482D-BB9F-C6C89AF8EAE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColTrain.Shared.Contracts", "ColTrain.Shared.Contracts\ColTrain.Shared.Contracts.csproj", "{BF87C70B-AA62-4783-9BAD-70EEF1C03BAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColTrain.Shared.Contracts", "ColTrain.Shared.Contracts\ColTrain.Shared.Contracts.csproj", "{BF87C70B-AA62-4783-9BAD-70EEF1C03BAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColTrain.Shared.Core", "ColTrain.Shared.Core\ColTrain.Shared.Core.csproj", "{E71C251F-5DA6-434F-80E3-1CF48969E053}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColTrain.Shared.Core", "ColTrain.Shared.Core\ColTrain.Shared.Core.csproj", "{E71C251F-5DA6-434F-80E3-1CF48969E053}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColTrain.Shared.DTO", "ColTrain.Shared.DTO\ColTrain.Shared.DTO.csproj", "{540CA3BD-0B0C-4A62-8EFF-85EEA47AB3A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColTrain.Shared.DTO", "ColTrain.Shared.DTO\ColTrain.Shared.DTO.csproj", "{540CA3BD-0B0C-4A62-8EFF-85EEA47AB3A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColTrain.Shared.Resources", "ColTrain.Shared.Resources\ColTrain.Shared.Resources.csproj", "{E17299E1-E742-41BA-BBB2-DC88D7191F55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColTrain.Shared.Resources", "ColTrain.Shared.Resources\ColTrain.Shared.Resources.csproj", "{E17299E1-E742-41BA-BBB2-DC88D7191F55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColTrain.Shared.Infrastructure", "ColTrain.Shared.Infrastructure\ColTrain.Shared.Infrastructure.csproj", "{B97C3914-1458-4138-8848-786AB1E9972F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColTrain.Shared.Infrastructure", "ColTrain.Shared.Infrastructure\ColTrain.Shared.Infrastructure.csproj", "{B97C3914-1458-4138-8848-786AB1E9972F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColTrain.Services.Contracts", "ColTrain.Services.Contracts\ColTrain.Services.Contracts.csproj", "{2A3B76DE-8385-445A-8A8F-417A8174F56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColTrain.Services.Core", "ColTrain.Services.Core\ColTrain.Services.Core.csproj", "{34D0961B-5099-4760-B1DC-333E1589D1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColTrain.Services.DTO", "ColTrain.Services.DTO\ColTrain.Services.DTO.csproj", "{0E81AC38-9384-40C5-8AE3-A90DE710C83E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +55,18 @@ Global
 		{B97C3914-1458-4138-8848-786AB1E9972F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B97C3914-1458-4138-8848-786AB1E9972F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B97C3914-1458-4138-8848-786AB1E9972F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A3B76DE-8385-445A-8A8F-417A8174F56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A3B76DE-8385-445A-8A8F-417A8174F56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A3B76DE-8385-445A-8A8F-417A8174F56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A3B76DE-8385-445A-8A8F-417A8174F56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D0961B-5099-4760-B1DC-333E1589D1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D0961B-5099-4760-B1DC-333E1589D1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D0961B-5099-4760-B1DC-333E1589D1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D0961B-5099-4760-B1DC-333E1589D1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E81AC38-9384-40C5-8AE3-A90DE710C83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E81AC38-9384-40C5-8AE3-A90DE710C83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E81AC38-9384-40C5-8AE3-A90DE710C83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E81AC38-9384-40C5-8AE3-A90DE710C83E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +78,9 @@ Global
 		{540CA3BD-0B0C-4A62-8EFF-85EEA47AB3A0} = {65AA0FD0-1C64-482D-BB9F-C6C89AF8EAE3}
 		{E17299E1-E742-41BA-BBB2-DC88D7191F55} = {65AA0FD0-1C64-482D-BB9F-C6C89AF8EAE3}
 		{B97C3914-1458-4138-8848-786AB1E9972F} = {65AA0FD0-1C64-482D-BB9F-C6C89AF8EAE3}
+		{2A3B76DE-8385-445A-8A8F-417A8174F56D} = {7C5B1E77-FB52-4C75-B2B0-1FB5C4C7CB5B}
+		{34D0961B-5099-4760-B1DC-333E1589D1E8} = {7C5B1E77-FB52-4C75-B2B0-1FB5C4C7CB5B}
+		{0E81AC38-9384-40C5-8AE3-A90DE710C83E} = {7C5B1E77-FB52-4C75-B2B0-1FB5C4C7CB5B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72E83C83-D64D-464C-9C50-F2853D698D89}

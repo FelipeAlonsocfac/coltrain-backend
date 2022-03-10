@@ -5,16 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Storage\" />
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.15" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\ColTrain.Services.Contracts\ColTrain.Services.Contracts.csproj" />
     <ProjectReference Include="..\ColTrain.Shared.Contracts\ColTrain.Shared.Contracts.csproj" />
-    <ProjectReference Include="..\ColTrain.Shared.DTO\ColTrain.Shared.DTO.csproj" />
+    <ProjectReference Include="..\ColTrain.Shared.Infrastructure\ColTrain.Shared.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

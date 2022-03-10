@@ -1,8 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
+using ColTrain.Services.Contracts.Interfaces.Services;
+using ColTrain.Services.Core.Services;
+using ColTrain.Shared.Contracts.Interfaces.Repositories;
+using ColTrain.Shared.Infrastructure.Repositories;
 
 namespace ColTrain.Services.WebApi.Configurations
 {
@@ -11,12 +12,13 @@ namespace ColTrain.Services.WebApi.Configurations
         public static IServiceCollection AddDependenceInjectionConfiguration(this IServiceCollection services)
         {
             #region Repositories
-
-
+            services.AddScoped<ICityRepository, CityRepository>();
+            services.AddScoped<IStateRepository, StateRepository>();
             #endregion End Repositories
 
             #region Services
-
+            services.AddScoped<ICityService, CityService>();
+            services.AddScoped<IStateService, StateService>();
             #endregion End Services
 
             #region Validators

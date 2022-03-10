@@ -1,4 +1,5 @@
 using ColTrain.Services.WebApi.Configurations;
+using ColTrain.Shared.Infrastructure.DataAccess;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,7 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace ColTrain.Services.WebApi
@@ -48,7 +51,20 @@ namespace ColTrain.Services.WebApi
             });
             services.AddAutoMapper(typeof(Startup));
             services.AddControllers().AddFluentValidation();
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(c =>
+            {
+                //c.SwaggerDoc("v1.0", new Info
+                //{
+                //    Title = "My APIs",
+                //    Version = "v1.0",
+                //    Description = "REST APIs "
+                //});
+
+                //**// Set the comments path for the Swagger JSON and UI.**
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
