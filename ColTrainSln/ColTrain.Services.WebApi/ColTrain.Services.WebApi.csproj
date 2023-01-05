@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +16,13 @@
     <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ColTrain.Services.Contracts\ColTrain.Services.Contracts.csproj" />
+    <ProjectReference Include="..\ColTrain.Services.Core\ColTrain.Services.Core.csproj" />
+    <ProjectReference Include="..\ColTrain.Services.DTO\ColTrain.Services.DTO.csproj" />
+    <ProjectReference Include="..\ColTrain.Shared.Infrastructure\ColTrain.Shared.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

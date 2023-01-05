@@ -12,10 +12,10 @@ namespace ColTrain.Shared.Infrastructure.DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<MunicipioTable>()
-            //    .HasOne(x => x.Departamento)
-            //    .WithMany(y => y.Municipios)
-            //    .HasForeignKey(x => x.IdDepartamento);
+            modelBuilder.Entity<CityTable>()
+                .HasOne(x => x.State)
+                .WithMany(y => y.Cities)
+                .HasForeignKey(x => x.StateId);
 
 
             base.OnModelCreating(modelBuilder);
@@ -23,6 +23,7 @@ namespace ColTrain.Shared.Infrastructure.DataAccess
         }
 
         public DbSet<CityTable> City { get; set; }
+        public DbSet<StateTable> State { get; set; }
 
     }
 }

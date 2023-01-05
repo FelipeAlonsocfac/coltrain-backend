@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ColTrain.Shared.DTO\ColTrain.Shared.DTO.csproj" />
+    <ProjectReference Include="..\ColTrain.Services.DTO\ColTrain.Services.DTO.csproj" />
   </ItemGroup>
 
 </Project>
