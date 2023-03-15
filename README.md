@@ -2,4 +2,4 @@
 
 PROJECT CHANGED HOST TO AZURE DEVOPS:
 
-https://dev.azure.com/xfelipe/Coltrain/_git/Coltrain.Api.Utils
+https://dev.azure.com/caralonso/ColTrain
